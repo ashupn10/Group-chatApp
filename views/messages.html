@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/login">login</a></li>
+                <li><a href="/">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+    </div>
+    <form onsubmit="document.getElementById('username').value=localStorage.getItem('username')" action="/user" method="post">
+        <input id="username" type="hidden" name="username">
+        <input id="Messages" type="text" name="Messages">
+        <button type="submit">send</button>
+    </form>
+</body>
+</html>
