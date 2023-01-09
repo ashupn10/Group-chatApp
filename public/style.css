@@ -1,0 +1,25 @@
+.main-header{
+    margin: auto;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    box-sizing: content-box;
+    border-radius: 2px;
+    background-color: rgb(208, 168, 154);
+}
+.main-header-nav{
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: rgb(212, 62, 62);
+    border-radius: 2px;
+    flex-direction: row;
+}
+.item-list{
+    list-style: none;
+    
+}
+.item{
+    color: black;
+    
+}

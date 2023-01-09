@@ -15,7 +15,7 @@ router.use('/user',(req,res,next)=>{
           console.log("File written successfully\n");
         }
     });
-    res.redirect('/');
+    next();
 })
 router.use((req,res,next)=>{
     res.sendFile(path.join(__dirname,'..','views','messages.html'));

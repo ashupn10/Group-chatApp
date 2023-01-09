@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Login</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/login">login</a></li>
+    <header class="main-header">
+        <nav class="main-header-nav">
+            <ul class="item-list">
+                <li class="items"><a href="/login">login</a></li>
             </ul>
         </nav>
     </header>
-    <form onsubmit="localStorage.setItem(`username`, document.getElementById(`username`).value)" action="/" method="POST">
+    <form onsubmit="localStorage.setItem(`username`, document.getElementById(`username`).value)" action="/messages" method="POST" id="form">
         <input id="username" type="text" name="title">
         <button type="submit">Login</button>
     </form>
