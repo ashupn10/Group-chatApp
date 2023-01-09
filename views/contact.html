@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Login</title>
+    <title>Contact</title>
 </head>
 <body>
     <header class="main-header">
@@ -16,9 +16,17 @@
             </ul>
         </nav>
     </header>
-    <form onsubmit="localStorage.setItem(`username`, document.getElementById(`username`).value)" action="/messages" method="POST" id="form">
-        <input id="username" type="text" name="title">
-        <button type="submit">Login</button>
+    <form action="/contact/form" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="Name">
+        <label for="email">email</label>
+        <input type="email" name="email">
+        <label for="phone">Phone</label>
+        <input type="tel" >
+        <label for="date">Time for call</label>
+        <input type="date">
+        <input type="time">
+        <button type="submit">Get a call</button>
     </form>
 </body>
 </html>

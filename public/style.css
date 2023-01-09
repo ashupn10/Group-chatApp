@@ -17,7 +17,7 @@
 }
 .item-list{
     list-style: none;
-    
+    text-decoration: none;
 }
 .item{
     color: black;
